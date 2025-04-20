@@ -19,28 +19,28 @@ export class VolunteerService {
       title: 'English Teaching',
       description: 'Share your knowledge and help our students learn English through interactive lessons and activities.',
       requirements: ['Native or fluent English speaker', 'Teaching experience preferred', 'Bachelor\'s degree'],
-      image: 'https://images.unsplash.com/photo-1577896851231-70ef18881754'
+      image: '//assets/images/gallery/volunteer/teaching-english.jpeg'
     },
     {
       id: 'cultural-exchange',
       title: 'Cultural Exchange',
       description: 'Immerse yourself in Cambodian culture while sharing your own cultural background with our community.',
       requirements: ['Open-minded', 'Interest in Cambodian culture', 'Willingness to participate in local activities'],
-      image: 'https://images.unsplash.com/photo-1544531585-9847b68c8c86'
+      image: '/assets/images/gallery/volunteer/cultural-exchange.jpeg'
     },
     {
       id: 'community-projects',
       title: 'Community Projects',
       description: 'Work on various community development initiatives including infrastructure, health, and education.',
       requirements: ['Project management skills', 'Team player', 'Previous volunteer experience'],
-      image: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b'
+      image: '/assets/images/gallery/volunteer/communuity-project.JPG'
     },
     {
       id: 'sports-activities',
       title: 'Sports & Activities',
       description: 'Lead sports activities and organize recreational events for students after school.',
       requirements: ['Sports coaching experience', 'High energy', 'Good with children'],
-      image: 'https://images.unsplash.com/photo-1526976668912-1a811878dd37'
+      image: '/assets/images/gallery/volunteer/sport-and-other-activities.jpeg'
     }
   ];
 
