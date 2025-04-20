@@ -19,7 +19,7 @@ export class VolunteerService {
       title: 'English Teaching',
       description: 'Share your knowledge and help our students learn English through interactive lessons and activities.',
       requirements: ['Native or fluent English speaker', 'Teaching experience preferred', 'Bachelor\'s degree'],
-      image: '//assets/images/gallery/volunteer/teaching-english.jpeg'
+      image: '/assets/images/gallery/volunteer/teaching-english.jpeg'
     },
     {
       id: 'cultural-exchange',
@@ -33,7 +33,7 @@ export class VolunteerService {
       title: 'Community Projects',
       description: 'Work on various community development initiatives including infrastructure, health, and education.',
       requirements: ['Project management skills', 'Team player', 'Previous volunteer experience'],
-      image: '/assets/images/gallery/volunteer/communuity-project.JPG'
+      image: '/assets/images/gallery/volunteer/community-project.png'
     },
     {
       id: 'sports-activities',
