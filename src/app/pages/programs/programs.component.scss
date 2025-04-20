@@ -1,0 +1,37 @@
+.program-section {
+  @apply border-b border-gray-200 pb-16;
+
+  &:last-child {
+    @apply border-b-0 pb-0;
+  }
+}
+
+.program-card {
+  @apply bg-white rounded-lg shadow-md p-8;
+  
+  &__icon {
+    @apply mb-6;
+    
+    i {
+      @apply transition-transform duration-300;
+    }
+    
+    &:hover i {
+      @apply transform scale-110;
+    }
+  }
+}
+
+.detail-item {
+  @apply text-gray-700;
+  
+  ul {
+    @apply mt-2 space-y-1 text-gray-600;
+  }
+}
+
+a {
+  &:hover i {
+    @apply transform translate-x-1;
+  }
+}

@@ -1,0 +1,16 @@
+:host {
+  display: block;
+}
+
+.text-blue-600 {
+  transition: all 0.3s ease;
+}
+
+a {
+  &:hover {
+    i {
+      transform: translateX(4px);
+      transition: transform 0.3s ease;
+    }
+  }
+}

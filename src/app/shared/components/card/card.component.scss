@@ -1,0 +1,20 @@
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden;
+
+  &__image-container {
+    @apply relative;
+  }
+
+  &__image {
+    @apply w-full h-48 object-cover;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__content {
+    @apply p-6;
+  }
+}

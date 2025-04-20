@@ -1,0 +1,19 @@
+.footer-link {
+  @apply text-gray-400 transition-colors;
+
+  &:hover {
+    @apply text-white;
+  }
+}
+
+.social-link {
+  @apply text-gray-400 hover:text-white transition-colors;
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+  
+  i {
+    transition: transform 0.2s ease;
+  }
+}

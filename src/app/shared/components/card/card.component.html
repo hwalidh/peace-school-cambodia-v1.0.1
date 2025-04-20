@@ -1,0 +1,8 @@
+<div class="card">
+  <div *ngIf="imageUrl" class="card__image-container">
+    <img [src]="imageUrl" [alt]="imageAlt" class="card__image">
+  </div>
+  <div class="card__content">
+    <ng-content></ng-content>
+  </div>
+</div>

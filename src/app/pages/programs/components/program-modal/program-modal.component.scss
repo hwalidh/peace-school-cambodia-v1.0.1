@@ -1,0 +1,47 @@
+.program-modal {
+  @apply p-6 max-w-2xl w-full;
+
+  &__header {
+    @apply flex items-center gap-4 mb-6 relative;
+  }
+
+  &__icon {
+    @apply text-4xl text-blue-600;
+  }
+
+  &__title {
+    @apply text-2xl font-bold text-gray-800;
+  }
+
+  &__close {
+    @apply absolute right-0 top-0 text-gray-500 hover:text-gray-700 transition-colors;
+  }
+
+  &__content {
+    @apply space-y-6;
+  }
+
+  &__description {
+    @apply text-gray-600 leading-relaxed;
+  }
+
+  &__section {
+    @apply border-t pt-4;
+
+    h3 {
+      @apply text-lg font-semibold text-gray-800 mb-2;
+    }
+
+    ul {
+      @apply list-disc list-inside text-gray-600 space-y-1;
+    }
+  }
+
+  &__footer {
+    @apply mt-8 flex justify-end;
+
+    .btn-primary {
+      @apply bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors;
+    }
+  }
+}

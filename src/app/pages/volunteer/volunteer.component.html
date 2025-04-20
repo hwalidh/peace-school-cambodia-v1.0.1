@@ -1,0 +1,52 @@
+<app-volunteer-gallery></app-volunteer-gallery>
+
+
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h1 class="text-4xl font-bold text-center mb-12">Volunteer Opportunities</h1>
+    
+    <!-- Volunteer Programs Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
+      <div *ngFor="let program of programs" class="card transform hover:-translate-y-2 transition-transform duration-300">
+        <div class="relative h-48 mb-6 overflow-hidden rounded-t-lg">
+          <img [src]="program.image" [alt]="program.title" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white">{{ program.title }}</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 mb-6">{{ program.description }}</p>
+          <div class="space-y-2">
+            <div class="flex items-center text-gray-700">
+              <i class="fas fa-list-check w-6"></i>
+              <span class="font-medium">Requirements:</span>
+            </div>
+            <ul class="ml-6 space-y-2">
+              <li *ngFor="let req of program.requirements" class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">{{ req }}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="bg-blue-50 rounded-2xl p-8 lg:p-12">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl lg:text-3xl font-bold mb-6">Ready to Make a Difference?</h2>
+        <p class="text-gray-600 mb-8 lg:text-lg">
+          Join our international community of volunteers through Workaway. Experience teaching, cultural exchange, and community development while making a lasting impact in rural Cambodia.
+        </p>
+        <a href="https://www.workaway.info/en/host/394829761331" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="inline-flex items-center justify-center gap-3 bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+          <i class="fas fa-globe text-xl"></i>
+          <span class="font-semibold">Visit Our Workaway Profile</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

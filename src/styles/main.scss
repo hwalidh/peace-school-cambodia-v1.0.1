@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Variables
+@import 'variables';
+
+// Import Angular Material theme
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+// Import Owl Carousel styles
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+// Custom styles for Material Dialog
+.program-modal-panel {
+  .mat-mdc-dialog-container {
+    padding: 0;
+  }
+}
+
+// Custom styles for Owl Carousel
+.owl-theme {
+  .owl-nav {
+    margin-top: 20px;
+    
+    [class*='owl-'] {
+      background: #2563eb;
+      color: white;
+      font-size: 14px;
+      padding: 8px 12px;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background: #1d4ed8;
+      }
+    }
+  }
+  
+  .owl-dots {
+    margin-top: 20px;
+    
+    .owl-dot {
+      span {
+        background: #e2e8f0;
+      }
+      
+      &.active,
+      &:hover {
+        span {
+          background: #2563eb;
+        }
+      }
+    }
+  }
+}

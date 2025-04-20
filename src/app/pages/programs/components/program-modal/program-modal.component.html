@@ -1,0 +1,39 @@
+<div class="program-modal">
+  <div class="program-modal__header">
+    <i class="fas {{data.icon}} program-modal__icon"></i>
+    <h2 class="program-modal__title">{{data.title}}</h2>
+    <button class="program-modal__close" (click)="close()">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+
+  <div class="program-modal__content">
+    <p class="program-modal__description">{{data.fullDescription || data.description}}</p>
+
+    <div *ngIf="data.requirements?.length" class="program-modal__section">
+      <h3>Requirements</h3>
+      <ul>
+        <li *ngFor="let req of data.requirements">{{req}}</li>
+      </ul>
+    </div>
+
+    <div *ngIf="data.duration" class="program-modal__section">
+      <h3>Duration</h3>
+      <p>{{data.duration}}</p>
+    </div>
+
+    <div *ngIf="data.schedule" class="program-modal__section">
+      <h3>Schedule</h3>
+      <p>{{data.schedule}}</p>
+    </div>
+
+    <div *ngIf="data.fees" class="program-modal__section">
+      <h3>Fees</h3>
+      <p>{{data.fees}}</p>
+    </div>
+  </div>
+
+  <div class="program-modal__footer">
+    <button class="btn-primary" (click)="close()">Close</button>
+  </div>
+</div>
